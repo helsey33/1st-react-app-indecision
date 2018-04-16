@@ -1,0 +1,31 @@
+.error{
+    color:$off-white;
+    font-style:italic;
+    margin:$m-size 0;
+    padding:0 $m-size;
+
+}
+
+.add-option{
+    display: flex;
+    flex-direction: column;
+    padding: $m-size;
+    input[type='text']{
+        flex-grow: 1;
+        border:none;
+        border-bottom:.3rem solid darken($dark-blue ,10%);
+        background: $dark-blue;
+        color:$off-white;
+        padding: $s-size;
+        margin-bottom:0 0 $s-size 0;
+    }
+}
+
+@media (min-width:45rem){
+    .add-option{
+        flex-direction: row;
+        input[type='text']{
+            margin-right: $s-size;
+        }
+    }
+}
